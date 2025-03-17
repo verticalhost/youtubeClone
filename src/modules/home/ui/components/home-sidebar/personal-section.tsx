@@ -1,7 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useAuth, useClerk } from "@clerk/nextjs";
-import { HistoryIcon, ListVideoIcon, ThumbsUpIcon, FileTextIcon } from "lucide-react";
+import { HistoryIcon, ListVideoIcon, ThumbsUpIcon } from "lucide-react";
 
 import { 
   SidebarGroup, 
@@ -30,12 +32,6 @@ const items = [
     url: "/playlists",
     icon: ListVideoIcon,
     auth: true,
-  },
-  {
-    title: "Terms",
-    url: "/terms",
-    icon: FileTextIcon,
-    auth: false,
   },
 ];
 
