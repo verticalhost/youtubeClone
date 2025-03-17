@@ -44,4 +44,3 @@ const UserSectionSuspense = ({ userId }: UserSectionProps) => {
     </div>
   );
 };
-
